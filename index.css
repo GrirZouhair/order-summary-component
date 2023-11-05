@@ -1,0 +1,150 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+img {
+    max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--Pale-blue);
+}
+
+.BackgoundColor {
+    background: url('./images/pattern-background-mobile.svg') no-repeat center/cover;
+    height: 50rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -3;
+}
+
+
+.Global {
+    width: 310px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 1.2rem;
+}
+
+.Picture {
+    background: url('./images/illustration-hero.svg') no-repeat center/cover;
+    height: 150px;
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.Container {
+    text-align: center;
+}
+
+h2 {
+    color: var(--Dark-blue);
+    margin-top: 1.5rem;
+}
+
+p {
+    color: var(--Desaturated-blue);
+    line-height: 1.6;
+    font-size: 16px;
+    padding-bottom: 1rem;
+    padding: 20px;
+}
+
+span {
+    color: var(--Desaturated-blue);
+    font-size: 14px;
+    margin-top: 3px;
+    font-weight: normal;
+}
+
+a {
+    color: blue;
+    background-color: var(--Very-pale-blue);
+}
+
+button {
+    border: none;
+}
+
+section {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.7rem;
+    margin: auto;
+    border-radius: 1rem;
+    gap: 1.5rem;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Buttons {
+    padding-top: 1.3rem;
+    display: grid;
+    row-gap: 1rem;
+    margin: auto;
+}
+
+button:first-child {
+    color: var(--Very-pale-blue);
+    box-shadow: 0px 3px 8px var(--Bright-blue);
+    width: 80%;
+    margin: auto;
+    padding: 0.9rem;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    background-color: var(--Bright-blue);
+}
+
+button:last-child {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    padding-top: 0.4rem;
+    padding-bottom: 1.3rem;
+    width: fit-content;
+    margin: auto;
+    background-color: #fff;
+}
+
+
+
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    font-size: bold;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .BackgoundColor {
+        background: url('./images/pattern-background-desktop.svg') no-repeat center/cover;
+        height: 50rem;
+    }
+}
